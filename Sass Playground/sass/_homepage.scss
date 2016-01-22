@@ -1,32 +1,16 @@
-main{
-    margin-top: 100px;
-}
-
-.layout-content{
-    @include span(8);
-}
-
-.layout-sidebar-first{
-    @include span(2);
-}
-
-.layout-sidebar-second{
-    @include span(2 last);
-}
-
-.article-list{
-    h3{
-        a{
-            color:#464646;
-            text-decoration: none;
-        }
+main {
+    @include span(12 last);
+    margin-top: $body-margin;
+    background-color: $test-background-color;
+    min-height: $webkit-min-body-height;
+    min-height: $moz-min-body-height;
+    min-height: $calc-min-body-height;
+    border-radius: $content-border-radius;
+    @include susy-breakpoint($bp-medium, $susy) {
+        @include span(7 last);
     }
-
-    p{
-        line-height:1.5;
-    }
-
-    .views-row{
-        margin:40px 0;
+    @include susy-breakpoint($bp-large, $susy) {
+        @include span(9 last);
     }
 }
+

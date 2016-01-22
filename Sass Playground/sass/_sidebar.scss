@@ -1,0 +1,15 @@
+aside {
+	@include span(0 first);
+	background-color: $test-background-color;
+	border-radius: $content-border-radius;
+	@include susy-breakpoint($bp-medium, $susy) {
+		@include span(5 first);
+		min-height: 2em;
+		margin-top: $body-margin;
+	}
+	@include susy-breakpoint($bp-large, $susy) {
+		@include span(3 first);
+		min-height: 2em;
+		margin-top: $body-margin;
+	}
+}
