@@ -24,14 +24,14 @@
                 border-width: 2px;
                 a {
                     @extend .nav-link;
-                    padding-left: 30%;
+                    padding-left: 25%;
                     @include susy-breakpoint($bp-medium, $susy) {
                         @extend .nav-link;
-                        padding-left: 40%;
+                        padding-left: 35%;
                     }
                     @include susy-breakpoint($bp-large, $susy) {
                         @extend .nav-link;
-                        padding-left: 45%;
+                        padding-left: 40%;
                     }
                 }
             }
