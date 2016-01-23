@@ -42,6 +42,7 @@
     }
 
     main {
+        padding-top: 50px;
         background: rgba(40, 13, 33, 0.8);
         min-height: $webkit-min-body-height;
         min-height: $moz-min-body-height;
@@ -76,6 +77,17 @@
                 padding-top: 15px;
             }
         }
+        img {
+            width: 100%;
+            @include susy-breakpoint($bp-medium, $susy) {
+                width: 325px;
+                float: right;
+            }
+            @include susy-breakpoint($bp-large, $susy) {
+                width: 325px;
+                float: right;
+            }
+        }
     }
 }
 
@@ -87,4 +99,8 @@
     text-align: left;
     direction: rtl; 
     unicode-bidi: bidi-override;
+}
+
+#carousel-images {
+    display: none;
 }
