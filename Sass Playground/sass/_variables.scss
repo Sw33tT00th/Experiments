@@ -1,14 +1,14 @@
 $test-background-color:	#464646;
 
-$header-height:		60px;
+$header-height:		424px;
 $header-padding:	8px;
 $body-margin:		50px;
-$footer-margin:		60px;
-$footer-padding:	40px;
-$footer-height:		0px;
-$webkit-min-body-height:	-webkit-calc(100% - (#{$header-height} + #{$body-margin} + #{$footer-margin} + (#{$footer-padding} * 2) + #{$footer-height}));
-$moz-min-body-height:		-moz-calc(100% - (#{$header-height} + #{$body-margin} + #{$footer-margin} + (#{$footer-padding} * 2) + #{$footer-height}));
-$calc-min-body-height:		calc(100% - (#{$header-height} + #{$body-margin} + #{$footer-margin} + (#{$footer-padding} * 2) + #{$footer-height}));
+$footer-margin:		70px;
+$footer-padding:	60px;
+$nav-height:		40px;
+$webkit-min-body-height:	-webkit-calc(100% - (#{$header-height} + #{$body-margin} + #{$footer-margin} + (#{$footer-padding} * 2) + #{$nav-height}));
+$moz-min-body-height:		-moz-calc(100% - (#{$header-height} + #{$body-margin} + #{$footer-margin} + (#{$footer-padding} * 2) + #{$nav-height}));
+$calc-min-body-height:		calc(100% - (#{$header-height} + #{$body-margin} + #{$footer-margin} + (#{$footer-padding} * 2) + #{$nav-height}));
 
 $content-border-radius:		5px;
 $bp-medium: 32em;

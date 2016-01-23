@@ -1,6 +1,41 @@
 .main-footer{
-    background: $test-background-color;
+    background: rgba(227, 196, 120, 0.8);
     padding:40px 0;
-    margin:60px 0 0 0;
-    color:#fff;
+    margin: 0 auto;
+    color:#000;
+
+    ul {
+    	list-style-type: none;
+    	li {
+			color: #000;
+    		display: inline;
+    	}
+    }
+}
+
+#contact {
+	@include span(12 first);
+	@include susy-breakpoint($bp-medium, $susy) {
+        @include span(6 first);
+    }
+    @include susy-breakpoint($bp-large, $susy) {
+        @include span(6 first);
+    }
+}
+
+#copyright {
+	@include span(12 first);
+	text-align: left;
+	@include susy-breakpoint($bp-medium, $susy) {
+        @include span(6 last);
+        text-align: right;
+    }
+    @include susy-breakpoint($bp-large, $susy) {
+        @include span(6 last);
+        text-align: right;
+    }
+    p {
+		color: #000;
+		margin-top: 15px;
+    }
 }

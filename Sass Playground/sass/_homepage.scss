@@ -1,16 +1,25 @@
-main {
-    @include span(12 last);
-    margin-top: $body-margin;
-    background-color: $test-background-color;
-    min-height: $webkit-min-body-height;
-    min-height: $moz-min-body-height;
-    min-height: $calc-min-body-height;
-    border-radius: $content-border-radius;
-    @include susy-breakpoint($bp-medium, $susy) {
-        @include span(7 last);
+#content {
+    background: rgba(227, 196, 120, 0.1);
+    margin-top: 0;
+
+    nav {
+        height: 40px;
+        background: #512F3C;
+        ul {
+            list-style-type: none;
+            li {
+                @include span(4 first);
+                margin-left: auto;
+                margin-right: auto;
+                display: inline;
+            }
+        }
     }
-    @include susy-breakpoint($bp-large, $susy) {
-        @include span(9 last);
+
+    main {
+        background: rgba(40, 13, 33, 0.8);
+        min-height: $webkit-min-body-height;
+        min-height: $moz-min-body-height;
+        min-height: $calc-min-body-height;
     }
 }
-
