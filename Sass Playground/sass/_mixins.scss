@@ -72,5 +72,7 @@ $base-font-size:16px;
 }
 
 @include declare-font-face('Oswald', 'Oswald-light', lighter);
-@include declare-font-face('Lato', 'Lato-Bold');
+@include declare-font-face('Lato-Bold', 'Lato-Bold');
+@include declare-font-face('Lato', 'Lato-Regular');
 @include declare-font-face('Overlock', 'Overlock-Bold', bold);
+@include declare-font-face('Noto-Bold', 'NotoSans-Bold');

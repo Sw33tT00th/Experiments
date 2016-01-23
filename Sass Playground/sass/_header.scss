@@ -45,7 +45,7 @@ header {
 	    }
 	}
 	#title2 {
-		font-family: Lato;
+		font-family: Lato-Bold;
 		font-size: 12pt;
 		@include susy-breakpoint($bp-medium, $susy) {
 	        font-size: 15pt;

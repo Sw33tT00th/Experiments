@@ -1,3 +1,10 @@
+.nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-family: Noto-Bold;
+    font-weight: bold;
+}
+
 #content {
     background: rgba(227, 196, 120, 0.1);
     margin-top: 0;
@@ -6,12 +13,30 @@
         height: 40px;
         background: #512F3C;
         ul {
+            margin-left: -10px;
+            padding-top: 0.5em;
             list-style-type: none;
             li {
                 @include span(4 first);
-                margin-left: auto;
-                margin-right: auto;
                 display: inline;
+                border-left-style: solid;
+                border-color: white;
+                border-width: 2px;
+                a {
+                    @extend .nav-link;
+                    padding-left: 30%;
+                    @include susy-breakpoint($bp-medium, $susy) {
+                        @extend .nav-link;
+                        padding-left: 40%;
+                    }
+                    @include susy-breakpoint($bp-large, $susy) {
+                        @extend .nav-link;
+                        padding-left: 45%;
+                    }
+                }
+            }
+            :first-child {
+                border-width: 0;
             }
         }
     }
