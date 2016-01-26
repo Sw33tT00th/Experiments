@@ -1,5 +1,5 @@
 main {
-    @include span(12 last);
+    @include span(12 first);
     margin-top: $body-margin;
     background-color: $test-background-color;
     min-height: $webkit-min-body-height;
@@ -7,10 +7,10 @@ main {
     min-height: $calc-min-body-height;
     border-radius: $content-border-radius;
     @include susy-breakpoint($bp-medium, $susy) {
-        @include span(7 last);
+        @include span(7 first);
     }
     @include susy-breakpoint($bp-large, $susy) {
-        @include span(9 last);
+        @include span(9 first);
     }
 }
 
