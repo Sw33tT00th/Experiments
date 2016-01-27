@@ -1,0 +1,24 @@
+.baseButton {
+	height: 2em;
+	background-color: #f1f1f1;
+	color: black;
+	border: 1px solid #c6c6c6;
+	margin: 3px;
+	border-radius: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.baseButton:hover {
+	background-color: #f8f8f8;
+	border: 2px solid #f1f1f1;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+button {
+	@extend .baseButton;
+	:hover {
+		@extend .baseButton:hover;
+	}
+}

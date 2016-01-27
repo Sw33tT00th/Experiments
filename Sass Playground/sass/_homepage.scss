@@ -1,3 +1,5 @@
+@import "controls/buttons";
+
 main {
     @include span(12 first);
     margin-top: $body-margin;
